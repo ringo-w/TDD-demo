@@ -1,12 +1,12 @@
 const comp = require("../lib/string-compression.js");
 
-describe("strComp", () => {
+describe("comp", () => {
   // Inner describe 'context'
-  describe("when string is split", () => {
+  describe("when string is compressed and counted", () => {
     // Test
-    it("should return an array of characters", () => {
+    it("should return a string followed by its count", () => {
       // Assertion
-      expect(comp("aaabb"));
+      expect(comp("aaabb")).toEqual("a3b2");
     });
   });
 });
